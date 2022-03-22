@@ -51,7 +51,7 @@ export default function HomePage() {
       description: "A personal website created using React.JS.",
       link: {
         github: "https://github.com/RyneFerdinand/personal-website",
-        web: "https://github.com/RyneFerdinand/personal-website",
+        web: "https://ryne-ferdinand.netlify.app/",
       },
     },
   ];
@@ -81,7 +81,7 @@ export default function HomePage() {
             </a>
             <a
               className="hero-link-item"
-              href="mailto:ryneferdnand@gmail.com"
+              href="https://github.com/RyneFerdinand"
               target="_blank"
               rel="noopener noreferrer"
             >

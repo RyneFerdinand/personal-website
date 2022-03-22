@@ -38,9 +38,15 @@ export default function Header() {
         >
           Skills
         </Link>
-        <button className="contact-button" onClick={updateShowNav}>
-          Contact Me
-        </button>
+        <a
+          href="mailto:ryneferdnand@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="contact-button" onClick={updateShowNav}>
+            Contact Me
+          </button>
+        </a>
       </nav>
     </div>
   );
