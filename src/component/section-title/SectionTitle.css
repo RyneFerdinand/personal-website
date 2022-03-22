@@ -1,0 +1,25 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 4em 0;
+  gap: 5%;
+  white-space: nowrap;
+}
+
+.section-title--dark {
+  color: var(--white);
+}
+
+.section-title hr {
+  width: 100%;
+}
+
+.section-title__first-line {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-title__first-line {
+    display: block;
+  }
+}

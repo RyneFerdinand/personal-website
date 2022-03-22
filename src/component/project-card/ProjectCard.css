@@ -1,0 +1,119 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 25%);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.image-section {
+  position: relative;
+  padding: 10%;
+  cursor: inherit;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.project-card-description {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 10%;
+}
+
+.project-card-description p {
+  color: var(--white);
+  text-align: left;
+}
+
+.card-link-item {
+  color: var(--black);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.card-link-item:hover {
+  transform: scale(1.1);
+}
+
+.card-links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.25rem;
+}
+
+.card-link-api {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.image-section:hover .project-card-description {
+  display: flex;
+  position: absolute;
+}
+
+.info-section {
+  background-color: var(--white);
+  border-radius: 0 0 8px 8px;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  height: 100%;
+}
+
+.info-section__title {
+  text-align: left;
+  color: var(--black);
+}
+
+.type-list {
+  display: flex;
+  gap: 3%;
+}
+
+.tech-tag {
+  background-color: var(--black);
+  font-weight: 500;
+  color: var(--white);
+  padding: 0.3em 0.6em;
+  border-radius: 1000px;
+}
+
+@media only screen and (max-width: 576px) {
+  .project-card-description{
+    font-size: 1.25rem;
+  }
+
+  .card-link-item {
+    font-size: 1.25rem;
+  }
+
+  .show-description {
+    display: flex;
+    position: absolute;
+  }
+}
