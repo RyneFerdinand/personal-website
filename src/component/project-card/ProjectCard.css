@@ -23,6 +23,7 @@
 
 .project-card-description {
   display: none;
+  opacity: 0;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--black);
@@ -50,7 +51,6 @@
   border-radius: 100%;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.1s ease-in-out;
 }
 
 .card-link-item:hover {
@@ -72,6 +72,7 @@
 .image-section:hover .project-card-description {
   display: flex;
   position: absolute;
+  animation: show-description .2s ease-in-out forwards;
 }
 
 .info-section {
@@ -115,5 +116,16 @@
   .show-description {
     display: flex;
     position: absolute;
+  }
+}
+
+@keyframes show-description {
+  0% {
+    display: flex;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

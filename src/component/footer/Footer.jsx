@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="footer-links">
         <a
           className="footer-link-item footer-link-cv"
-          href="https://drive.google.com/file/d/1vq0raQUAlTVcH0GU5Cf6YHPssYghWwc3/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Gw9i4YVg_m0tGiZRKazQsSXwqubaZnpJ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

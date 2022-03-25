@@ -40,7 +40,7 @@ export default function HomePage() {
       link: {
         github: "https://github.com/RyneFerdinand/Comic-List",
         web: "https://comic-list.netlify.app/",
-        api: "https://comic-list-api.herokuapp.com/",
+        api: "https://comic-list-api.herokuapp.com/comic/home",
       },
     },
     {
@@ -73,7 +73,7 @@ export default function HomePage() {
           <div className="hero-links">
             <a
               className="hero-link-item hero-link-cv"
-              href="https://drive.google.com/file/d/1vq0raQUAlTVcH0GU5Cf6YHPssYghWwc3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Gw9i4YVg_m0tGiZRKazQsSXwqubaZnpJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -109,7 +109,7 @@ export default function HomePage() {
       <div id="project" className="project-section">
         <SectionTitle title={"Projects"} type={"light"} />
         <h5 className="section-description">
-          Here are some things that I’ve worked on (Hover the image to see the
+          Here are some things that I’ve worked on (Hover or click the image to see the
           details).
         </h5>
         <div className="project-list">
@@ -129,7 +129,7 @@ export default function HomePage() {
       <div id="skills" className="skill-section">
         <SectionTitle title={"Skills"} type={"dark"} />
         <h5 className="section-description section-description--dark">
-          Here are a few things that I could use (Hover to see more
+          Here are a few things that I could use (Hover or click to see more
           information).
         </h5>
         <div className="skill-section__tech">
