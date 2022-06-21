@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
@@ -23,6 +22,7 @@ import {
 import ReactTooltip from "react-tooltip";
 import comicList from "../assets/ComicList.webp";
 import portfolio from "../assets/Portfolio.webp";
+import papiKatering from "../assets/PapiKatering.webp";
 import profile from "../assets/Profile.webp";
 import ProjectCard from "../component/project-card/ProjectCard";
 import SectionTitle from "../component/section-title/SectionTitle";
@@ -30,6 +30,19 @@ import "./HomePage.css";
 
 export default function HomePage() {
   const projects = [
+    {
+      image: papiKatering,
+      title: "Papi Katering",
+      color: "#28947f",
+      techs: ["React.JS", "Express.JS", "PostgreSQL"],
+      description:
+        "A catering website for users to subscribe and sell packets.",
+      link: {
+        github: "https://github.com/kevinbennetth/PapiKatering",
+        web: "https://papikatering.netlify.app/",
+        api: "https://papi-katering.herokuapp.com/packet/home",
+      },
+    },
     {
       image: comicList,
       title: "Comic List",
@@ -109,8 +122,8 @@ export default function HomePage() {
       <div id="project" className="project-section">
         <SectionTitle title={"Projects"} type={"light"} />
         <h5 className="section-description">
-          Here are some things that I’ve worked on (Hover or click the image to see the
-          details).
+          Here are some things that I’ve worked on (Hover or click the image to
+          see the details).
         </h5>
         <div className="project-list">
           {projects.map((project, idx) => (
